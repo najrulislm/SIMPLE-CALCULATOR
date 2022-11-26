@@ -1,0 +1,49 @@
+<html>
+    <body>
+        <head>
+
+            <h1 align="center">Simple calculator to perform sum,product,difference and quotient</h1><hr>
+        </head>
+        <form>
+
+            Enter number for N1:<input type="text" id="n1"></br></br>
+            Enter number for N2:<input type="text" id="n2"></br></br>
+            Result:<input type="text" id="res"></br></br>
+
+            <input type="button" value="ADDITION" onclick="ADD()">
+            <input type="button" value="SUBTRACTION" onclick="SUB()">
+            <input type="button" value="MULTIPLICATION" onclick="MUL()">
+            <input type="button" value="DIVISION" onclick="DIV()">
+            </form>
+            <script>
+                function ADD()
+                {
+                    var n1=document.getElementById("n1").value;
+                    var n2=document.getElementById("n2").value;
+                    document.getElementById("res").value=parseInt(n1)+parseInt(n2);
+
+                }
+                function SUB()
+                {
+                    var n1=document.getElementById("n1").value;
+                    var n2=document.getElementById("n2").value;
+                    document.getElementById("res").value=parseInt(n1)-parseInt(n2);
+
+                }
+                function MUL()
+                {
+                    var n1=document.getElementById("n1").value;
+                    var n2=document.getElementById("n2").value;
+                    document.getElementById("res").value=parseInt(n1)*parseInt(n2);
+
+                }
+                function DIV()
+                {
+                    var n1=document.getElementById("n1").value;
+                    var n2=document.getElementById("n2").value;
+                    document.getElementById("res").value=parseInt(n1)/parseInt(n2);
+
+                }
+            </script>
+    </body>
+</html>
